@@ -31,6 +31,7 @@ ALLOWED_HOSTS = []
 
 INSTALLED_APPS = [
     'account.apps.AccountConfig',  # Custom made app for user accounts
+    'images.apps.ImagesConfig',  # Custom made app for images functionality
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
