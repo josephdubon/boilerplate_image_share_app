@@ -11,7 +11,7 @@ class ImageCreateForm(forms.ModelForm):
     class Meta:
         model = Image
         fields = (
-            # 'title',
+            'title',
             'url',
             'description',
         )
