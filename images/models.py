@@ -26,6 +26,9 @@ class Image(models.Model):
         blank=True
     )
 
+    def __str__(self):
+        return self.title
+
     # Auto generate slug from title
     def save(self, *args, **kwargs):
         if not self.slug:
