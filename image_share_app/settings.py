@@ -55,7 +55,7 @@ ROOT_URLCONF = 'image_share_app.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [BASE_DIR / 'templates'],
+        'DIRS': [],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -133,3 +133,9 @@ LOGOUT_URL = 'logout'
 
 # Email backend
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+
+# Authentication backends
+AUTHENTICATION_BACKENDS = [
+    'django.contrib.auth.backends.ModelBackend',
+    'account.authenticate.EmailAuthBackend',
+]
