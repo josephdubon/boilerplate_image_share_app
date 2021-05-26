@@ -28,6 +28,9 @@
         <option value="$MODULE_DIR$/templates" />
         <option value="$MODULE_DIR$/templates/account" />
         <option value="$MODULE_DIR$/templates/registration" />
+        <option value="$MODULE_DIR$/templates/images" />
+        <option value="$MODULE_DIR$/templates/images/image" />
+        <option value="$MODULE_DIR$/templates/images/templates" />
       </list>
     </option>
   </component>
