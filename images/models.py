@@ -12,7 +12,7 @@ class Image(models.Model):
         on_delete=models.CASCADE
     )
     # Title, slug, url, file, descr., created at date for image
-    title = models.CharField(max_length=200),
+    title = models.CharField(max_length=200)
     slug = models.SlugField(max_length=200, blank=True)
     url = models.URLField()
     image = models.ImageField(upload_to='images/%Y%m%d')
