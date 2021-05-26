@@ -40,6 +40,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 
     'django_extensions',  # Django extensions functionality i.e. SSL/HTTPS on dev server
+
+    'easy_thumbnails',  # For auto image resizing
 ]
 
 MIDDLEWARE = [
