@@ -31,12 +31,17 @@ ALLOWED_HOSTS = []
 
 INSTALLED_APPS = [
     'account.apps.AccountConfig',  # Custom made app for user accounts
+    'images.apps.ImagesConfig',  # Custom made app for images functionality
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+
+    'django_extensions',  # Django extensions functionality i.e. SSL/HTTPS on dev server
+
+    'easy_thumbnails',  # For auto image resizing
 ]
 
 MIDDLEWARE = [
@@ -54,7 +59,7 @@ ROOT_URLCONF = 'image_share_app.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [BASE_DIR / 'templates'],
+        'DIRS': [],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -132,3 +137,9 @@ LOGOUT_URL = 'logout'
 
 # Email backend
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+
+# Authentication backends
+AUTHENTICATION_BACKENDS = [
+    'django.contrib.auth.backends.ModelBackend',
+    'account.authenticate.EmailAuthBackend',
+]

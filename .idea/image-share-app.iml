@@ -16,6 +16,8 @@
     <content url="file://$MODULE_DIR$" />
     <orderEntry type="jdk" jdkName="Python 3.9 (image-share-app)" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="jquery" level="application" />
+    <orderEntry type="library" name="js-cookie" level="application" />
   </component>
   <component name="PyDocumentationSettings">
     <option name="format" value="PLAIN" />
@@ -26,7 +28,11 @@
     <option name="TEMPLATE_FOLDERS">
       <list>
         <option value="$MODULE_DIR$/templates" />
+        <option value="$MODULE_DIR$/templates/account" />
         <option value="$MODULE_DIR$/templates/registration" />
+        <option value="$MODULE_DIR$/templates/images" />
+        <option value="$MODULE_DIR$/templates/images/image" />
+        <option value="$MODULE_DIR$/templates/images/templates" />
       </list>
     </option>
   </component>

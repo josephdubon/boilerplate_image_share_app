@@ -140,3 +140,6 @@ fabric.properties
 .idea/caches/build_file_checksums.ser
 # user uploaded media files
 media/
+# auto generated https ssl cert
+/cert.crt
+/cert.key
