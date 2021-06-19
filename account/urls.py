@@ -23,4 +23,17 @@ urlpatterns = [
     path('edit/',
          views.edit,
          name='edit'),
+    # Users list
+    path('users/',
+         views.user_list,
+         name='users_list'),
+    # User follow
+    path('users/follow/',
+         views.user_follow,
+         name='user_follow'),
+    # User detail
+    path('users/<username>/',
+         views.user_detail,
+         name='user_detail'),
+
 ]
