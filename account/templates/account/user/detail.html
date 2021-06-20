@@ -14,6 +14,9 @@
       <span class="total">{{ total_followers }}</span>
       follower{{ total_followers|pluralize }}
     </span>
+        <span class="count">
+        {{ total_views }} view{{ total_views|pluralize }}
+        </span>
         <a href="#" data-id="{{ user.id }}" data-action="{% if request.user in user.followers.all %}un{% endif %}follow"
            class="follow button">
             {% if request.user not in user.followers.all %}
