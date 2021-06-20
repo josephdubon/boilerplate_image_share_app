@@ -26,6 +26,9 @@ class Image(models.Model):
         related_name='images_liked',
         blank=True
     )
+    # store the total count of users who like each image
+    total_likes = models.PositiveIntegerField(db_index=True,
+                                              default=0)
 
     def __str__(self):
         return self.title
