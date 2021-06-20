@@ -12,6 +12,10 @@ urlpatterns = [
     path('like/',
          views.image_like,
          name='like'),
+    path('ranking/',
+         views.image_ranking,
+         name='ranking'),
+
     path('', views.image_list,
          name='list'),
 ]
